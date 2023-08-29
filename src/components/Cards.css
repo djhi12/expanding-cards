@@ -1,0 +1,76 @@
+
+.App {
+    margin-bottom: 100px;
+  }
+  /** Header **/
+  .container-header {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  /** Images **/
+  .img-container__img-box {
+    width: 70px;
+    height: 500px;
+    border-radius: 50px;
+    margin: 5px;
+    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    transition: 0.3s;
+  }
+  
+  .img-container__img-box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .img-1 {
+    background-image: url("https://images.unsplash.com/photo-1656077217715-bdaeb06bd01f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2264&q=80");
+  }
+  
+  .img-2 {
+    background-image: url("https://images.unsplash.com/photo-1508791573065-57c595096106?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80");
+  }
+  
+  .img-3 {
+    background-image: url("https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2413&q=80");
+  }
+  
+  .img-4 {
+    background-image: url("https://images.unsplash.com/photo-1498026474556-93048b8493d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2369&q=80");
+  }
+  
+  .img-5 {
+    background-image: url("https://images.unsplash.com/photo-1608178398319-48f814d0750c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2406&q=80");
+  }
+  
+  .img-6 {
+    background-image: url("https://images.unsplash.com/photo-1634176866089-b633f4aec882?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2380&q=80");
+  }
+  
+  .img-7 {
+    background-image: url("https://images.unsplash.com/photo-1590907047706-ee9c08cf3189?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2380&q=80");
+  }
+  
+  /** Text **/
+  
+  .panel__text {
+    position: absolute;
+    margin: 10px;
+    top: 50px;
+    left: 5px;
+    opacity: 0;
+    color: white;
+    transition: opacity .5s ease-in; /* Add a transition effect */
+  }
+  
+  .panel.active .panel__text {
+    opacity: 1;
+  }
+  
+  .panel.active {
+    width: 400px;
+    transition: width 1.5s ease-in, opacity 1.5s ease-in; /* Add opacity transition */
+  }
+  
